@@ -23,7 +23,7 @@ function Carrossel() {
     return (
         <section
             aria-label="Destaques"
-            className="relative mx-auto grid min-h-[420px] w-full max-w-6xl grid-cols-1 items-center gap-8 overflow-hidden rounded-3xl bg-[#140D0A] px-12 py-10 sm:px-16 md:grid-cols-2"
+            className="relative mx-auto grid min-h-105 w-full max-w-6xl grid-cols-1 items-center gap-8 overflow-hidden rounded-3xl bg-[#140D0A] px-12 py-10 sm:px-16 md:grid-cols-2"
         >
             <div className="text-left text-white">
                 <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-white/80">

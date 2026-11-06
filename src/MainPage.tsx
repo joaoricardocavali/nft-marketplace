@@ -12,7 +12,7 @@ function MainPage() {
 
     return (
         <>
-            <div className="main">
+            <div className="app-shell">
                 <Menu />
                 <div className="content">
                     {currentPage === 'inicio' && <InicioPage />}

@@ -1,14 +1,21 @@
-.main {
+.app-shell {
     background-color: #140D0A;
-    font: #F5F1EB;
-    width: 100vw;
-    height: 100vh;
+    color: #F5F1EB;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
-    background-color: #43d59d;
+    /* background-color: #43d59d; */
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding: 20px 0;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }

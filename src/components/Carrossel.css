@@ -1,18 +1,1 @@
 @import "tailwindcss";
-
-.main {
-    background-color: #140D0A;
-    font: #F5F1EB;
-    width: 100vw;
-    height: 100vh;
-}
-
-.carrossel {
-    background-color: #140D0A;
-    border: 1px solid #F5F1EB;
-    font: #F5F1EB;
-    width: 500px;
-    height: 700px;
-    /* display: flex;
-    justify-content: center; */
-}

@@ -15,14 +15,21 @@
     font: #F5F1EB;
     /* width: 33.33vw; */
     height: 45px;
+    margin-left: 15px;
     float: left;
     display: flex;
     align-self: center;
     align-items: center;
+    font-family: font/family;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 10%;
+
 }
 
 .menu-item2 {
-    background-color: #140D0A;
     font: #F5F1EB;
     width: 33.33vw;
     height: 45px;
@@ -30,23 +37,57 @@
     display: flex;
     align-self: center;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    font-family: font/family;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .menu-item3 {
-    background-color: #211cc4;
     font: #F5F1EB;
     /* width: 33.33vw; */
-    height: 45px;
+    /* height: 45px; */
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
     align-items: center;
+}
+.menu-item3 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .menu-btn {
     /* margin-top: 5px; */
     width: 100px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu-btn:hover {
     /* background-color: #f1875a; */
     border-bottom: 2px solid #f1875a;
+    cursor: pointer;
+}
+.menu-btn:active {
+    background-color: #564740;
+}
+
+.logout-btn {
+    background-color: #D28A4C;
+    border-radius: 6px;
+    width: 100px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
 }

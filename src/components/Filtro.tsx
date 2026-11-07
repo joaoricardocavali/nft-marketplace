@@ -20,7 +20,7 @@ function Filtro() {
             aria-label="Filtros da galeria"
             className="h-fit w-full rounded-xl border border-white/10 bg-white/5 p-5 text-left text-[#F5F1EB]"
         >
-            <h2 className="mb-4 text-large font-bold">Filtros</h2>
+            <h2 className="mb-4 text-large font-bold">Coleções</h2>
             <ul className="space-y-3">
                 {filtros.map((filtro) => (
                     <li

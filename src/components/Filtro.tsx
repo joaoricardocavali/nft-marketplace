@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const filtros = [
     { nome: 'Arte Digital', valor: '33' },
     { nome: 'Fotografia', valor: '12' },
@@ -11,6 +13,8 @@ const filtros = [
 ]
 
 function Filtro() {
+    const [filtroSelecionado, setFiltroSelecionado] = useState<string | null>(null)
+
     return (
         <aside
             aria-label="Filtros da galeria"
@@ -21,10 +25,19 @@ function Filtro() {
                 {filtros.map((filtro) => (
                     <li
                         key={filtro.nome}
-                        // className="border-b border-white/10 pb-3 text-sm last:border-0 last:pb-0"
                     >
-                        <span className="font-normal text-[15px] text-[#CFB28C]">{filtro.nome} ({filtro.valor})</span>
-                        <span className="mt-1 block text-white/60"></span>
+                        <button
+                            type="button"
+                            aria-pressed={filtroSelecionado === filtro.nome}
+                            onClick={() => setFiltroSelecionado(filtro.nome)}
+                            className={`w-full cursor-pointer text-left font-normal text-[15px] transition-colors ${
+                                filtroSelecionado === filtro.nome
+                                    ? 'text-[#E89B55]'
+                                    : 'text-[#CFB28C] hover:text-[#E89B55]'
+                            }`}
+                        >
+                            {filtro.nome} ({filtro.valor})
+                        </button>
                     </li>
                 ))}
             </ul>
